@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-20.0" layoutY="-26.0" prefHeight="318.0" prefWidth="368.0">
+         <children>
+            <DatePicker layoutX="34.0" layoutY="93.0" />
+            <HBox layoutX="96.0" layoutY="48.0" prefHeight="45.0" prefWidth="213.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="215.0" text="Schedule" textAlignment="CENTER" textFill="#803737">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox layoutX="66.0" layoutY="145.0" prefHeight="171.0" prefWidth="100.0" spacing="47.0">
+               <children>
+                  <Label text="Date">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Event">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="209.0" layoutY="137.0" prefHeight="179.0" prefWidth="134.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
