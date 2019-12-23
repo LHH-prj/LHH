@@ -1,0 +1,7 @@
+final DatePicker datePicker = new DatePicker();
+ datePicker.setOnAction(new EventHandler() {
+     public void handle(Event t) {
+         LocalDate date = datePicker.getValue();
+         System.err.println("Selected date: " + date);
+     }
+ });
