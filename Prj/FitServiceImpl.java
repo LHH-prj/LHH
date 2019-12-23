@@ -28,9 +28,9 @@ public class FitServiceImpl implements FitService {
 			if (bmi <= 18.5) {
 				System.out.printf("비만도(bmi)는 %.2f 이며 저체중 입니다.\n", bmi);
 			} else if (bmi <= 23) {
-				System.out.printf("비만도(bmi)는 %.2f 이며 이며 정상체중 입니다.\n", bmi);
+				System.out.printf("비만도(bmi)는 %.2f 이며 정상체중 입니다.\n", bmi);
 			} else if (bmi <= 25) {
-				System.out.printf("비만도(bmi)는 %.2f 이며 이며 과체중 입니다.\n", bmi);
+				System.out.printf("비만도(bmi)는 %.2f 이며 과체중 입니다.\n", bmi);
 			} else {
 				System.out.printf("비만도(bmi)는 %.2f 이며이며 비만 입니다.\n", bmi);
 			}
