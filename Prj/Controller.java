@@ -19,7 +19,7 @@ public class Controller implements Initializable{
 	private Parent fitForm;
 	private Parent metabolForm;
 
-	private FitService fitServ;
+	private FitServiceImpl fitServ;
 	private MetabolServiceImpl metabolServ;
 
 	
