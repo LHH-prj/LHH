@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="351.0" style="-fx-background-color:pink" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prj.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="94.0" prefWidth="351.0">
+         <children>
+            <Label prefHeight="40.0" prefWidth="169.0" text="기초대사량 계산기" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="166.0" prefHeight="54.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Label prefHeight="22.0" prefWidth="31.0" text="나이" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Years" prefHeight="23.0" prefWidth="80.0" />
+            <Label prefHeight="22.0" prefWidth="31.0" text="세" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="220.0" prefHeight="54.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Label prefHeight="22.0" prefWidth="31.0" text="신장" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Height" prefHeight="23.0" prefWidth="80.0" />
+            <Label prefHeight="22.0" prefWidth="31.0" text="cm" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="274.0" prefHeight="54.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Label prefHeight="22.0" prefWidth="31.0" text="체중" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Weight" prefHeight="23.0" prefWidth="80.0" />
+            <Label prefHeight="22.0" prefWidth="31.0" text="kg" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="339.0" prefHeight="54.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#MetabolProc" text="확인" />
+            <Button mnemonicParsing="false" onAction="#CancelProc" text="닫기" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="94.0" prefHeight="61.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="31.0" text="성별" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Man" contentDisplay="CENTER" mnemonicParsing="false" selected="true" text="남자">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Woman" contentDisplay="CENTER" mnemonicParsing="false" text="여자" toggleGroup="$gender" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

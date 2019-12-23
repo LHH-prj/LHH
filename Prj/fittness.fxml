@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="Prj.Controller" style ="-fx-background-color:pink">
+   <children>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="271.0" spacing="20.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="130.0" text="비만도 계산기" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="66.0" prefHeight="47.0" prefWidth="271.0" spacing="10.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="35.0" text="신장" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="height" prefHeight="23.0" prefWidth="85.0" />
+            <Label prefHeight="20.0" prefWidth="25.0" text="cm" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="113.0" prefHeight="47.0" prefWidth="271.0" spacing="10.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="35.0" text="체중" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="weight" prefHeight="23.0" prefWidth="85.0" />
+            <Label prefHeight="20.0" prefWidth="25.0" text="kg" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="160.0" prefHeight="47.0" prefWidth="271.0" spacing="20.0">
+         <children>
+            <Button onAction="#FitnessProc"  mnemonicParsing="false" text="확인" />
+            <Button onAction="#CancelProc" mnemonicParsing="false" text="닫기" />
+         </children>
+      </HBox>
+   </children>
+</Pane>
