@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="240.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="cash.Controller">
+   <children>
+      <Label text="정말로 결제 하시겠습니까?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="240.0" spacing="40.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#identifyOk" text="확인" />
+            <Button mnemonicParsing="false" onAction="#cencle" text="취소" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>
